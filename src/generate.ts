@@ -113,6 +113,16 @@ export async function generate(spec: string, options: CliOptions) {
       }
     }
 
+    // TODO: Support non-object types
+    if (resolvedSchema.allOf) {
+      const resolvedProperties = resolvedSchema.allOf.map(
+        schema => recursiveResolveSchema(schema).properties
+      );
+      resolvedSchema.properties = Object.assign({}, ...resolvedProperties);
+      resolvedSchema.type = 'object';
+      delete resolvedSchema.allOf;
+    }
+
     return resolvedSchema;
   }
 }
