@@ -1,5 +1,5 @@
 {
-  "name": "msw-auto-mock",
+  "name": "msw-auto-mock-fork-rahhi555",
   "version": "0.9.0",
   "description": "Generate random mock data from OpenAPI descriptions for msw.",
   "main": "dist/cli.js",
@@ -20,7 +20,7 @@
     "test": "vitest run",
     "gen:example": "node ./dist/cli.js https://raw.githubusercontent.com/github/rest-api-description/main/descriptions/ghes-3.3/ghes-3.3.json --output ./example/src/mock.ts"
   },
-  "author": "zoubingwu<zoubingwu@gmail.com>",
+  "author": "rahhi555<whowhose0904@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@apidevtools/swagger-parser": "^10.1.0",
@@ -41,12 +41,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zoubingwu/msw-auto-mock.git"
+    "url": "git+https://github.com/rahhi555/msw-auto-mock.git"
   },
   "bugs": {
-    "url": "https://github.com/zoubingwu/msw-auto-mock/issues"
+    "url": "https://github.com/rahhi555/msw-auto-mock.git/issues"
   },
-  "homepage": "https://github.com/zoubingwu/msw-auto-mock",
+  "homepage": "https://github.com/rahhi555/msw-auto-mock",
   "files": [
     "dist"
   ],
